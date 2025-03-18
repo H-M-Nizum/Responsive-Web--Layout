@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        max-width: 992px;
+        margin: auto;
+      }
+      .container {
+        padding: 1em 2em;
+      }
+      .box-1,
+      .box-2 {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+      .box-2 {
+        flex-direction: row-reverse;
+      }
+
+      @media screen and (max-width: 576px) {
+        .box-1,
+        .box-2 {
+          display: grid;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-1">
+        <div class="item-1">
+          <img src="./images/food1.jpeg" alt="image - 1" />
+        </div>
+        <div class="item-2">
+          <h1>First Card</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            necessitatibus adipisci fuga, nam enim itaque atque aut sapiente
+            odit sint nobis quasi voluptatum repudiandae dolor nihil animi! Eum
+            rem, ab optio quaerat saepe officiis a in blanditiis ad non? Soluta
+            suscipit deserunt impedit omnis voluptas laudantium recusandae.
+            Doloribus, quisquam harum!
+          </p>
+        </div>
+      </div>
+      <div class="box-2">
+        <div class="item-1">
+          <img src="./images/food2.jpeg" alt="image - 2" />
+        </div>
+        <div class="item-2">
+          <h1>Second Card</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+            quidem non voluptatum quae accusamus cum minima dolorum sequi ipsa,
+            hic quia nostrum soluta rerum blanditiis natus voluptatem
+            accusantium reiciendis perferendis harum culpa. Nulla eligendi fugit
+            cum error dolore obcaecati ex nostrum recusandae provident vel natus
+            unde assumenda, neque, odio voluptatum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
