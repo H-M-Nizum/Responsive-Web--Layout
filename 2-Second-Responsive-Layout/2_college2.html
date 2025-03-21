@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College 2</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 100px) 30px 30px;
+        gap: 20px;
+      }
+      .box {
+        background-color: gray;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #box-1 {
+        grid-row: span 5;
+      }
+      #box-11,
+      #box-12 {
+        grid-column: span 3;
+      }
+      #box-6,
+      #box-7,
+      #box-9,
+      #box-10 {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box-1">Bos - 1</div>
+      <div class="box" id="box-2">Bos - 2</div>
+      <div class="box" id="box-3">Bos - 3</div>
+      <div class="box" id="box-4">Bos - 4</div>
+      <div class="box" id="box-5">Bos - 5</div>
+      <div class="box" id="box-6">Bos - 6</div>
+      <div class="box" id="box-7">Bos - 7</div>
+      <div class="box" id="box-8">Bos - 8</div>
+      <div class="box" id="box-9">Bos - 9</div>
+      <div class="box" id="box-10">Bos - 10</div>
+      <div class="box" id="box-11">Bos - 11</div>
+      <div class="box" id="box-12">Bos - 12</div>
+    </div>
+  </body>
+</html>
